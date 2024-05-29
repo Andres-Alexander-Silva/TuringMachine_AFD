@@ -1,26 +1,26 @@
-Initial partition: [frozenset({'q4', 'q3', 'q6'}), frozenset({'q0', 'q2', 'q1', 'q5'})]
+Initial partition: [frozenset({'q3', 'q6', 'q4'}), frozenset({'q1', 'q0', 'q2', 'q5'})]
 
-Processing set: frozenset({'q0', 'q2', 'q1', 'q5'})
-Symbol: 1, Set: {'q0', 'q2', 'q5'}
-Partition updated: [frozenset({'q4', 'q3', 'q6'}), frozenset({'q0', 'q2', 'q5'}), frozenset({'q1'})]
+Processing set: frozenset({'q1', 'q0', 'q2', 'q5'})
 Symbol: 0, Set: {'q0'}
-Partition updated: [frozenset({'q4', 'q3', 'q6'}), frozenset({'q1'}), frozenset({'q0'}), frozenset({'q2', 'q5'})]
-
-Processing set: frozenset({'q0'})
-Symbol: 1, Set: set()
-Symbol: 0, Set: set()
+Partition updated: [frozenset({'q3', 'q6', 'q4'}), frozenset({'q0'}), frozenset({'q1', 'q2', 'q5'})]
+Symbol: 1, Set: {'q0', 'q2', 'q5'}
+Partition updated: [frozenset({'q3', 'q6', 'q4'}), frozenset({'q0'}), frozenset({'q2', 'q5'}), frozenset({'q1'})]
 
 Processing set: frozenset({'q1'})
-Symbol: 1, Set: set()
 Symbol: 0, Set: {'q0'}
+Symbol: 1, Set: set()
 
-Processing set: frozenset({'q4', 'q3', 'q6'})
-Symbol: 1, Set: {'q1', 'q4', 'q3', 'q6'}
-Symbol: 0, Set: {'q3', 'q1', 'q2', 'q6', 'q5', 'q4'}
+Processing set: frozenset({'q0'})
+Symbol: 0, Set: set()
+Symbol: 1, Set: set()
 
-Final partition: [frozenset({'q4', 'q3', 'q6'}), frozenset({'q1'}), frozenset({'q0'}), frozenset({'q2', 'q5'})]
+Processing set: frozenset({'q3', 'q6', 'q4'})
+Symbol: 0, Set: {'q1', 'q3', 'q2', 'q4', 'q5', 'q6'}
+Symbol: 1, Set: {'q1', 'q3', 'q6', 'q4'}
 
-New states mapping: {frozenset({'q4', 'q3', 'q6'}): 'q0', frozenset({'q1'}): 'q1', frozenset({'q0'}): 'q2', frozenset({'q2', 'q5'}): 'q3'}
-New initial state: q2
+Final partition: [frozenset({'q3', 'q6', 'q4'}), frozenset({'q0'}), frozenset({'q2', 'q5'}), frozenset({'q1'})]
+
+New states mapping: {frozenset({'q3', 'q6', 'q4'}): 'q0', frozenset({'q0'}): 'q1', frozenset({'q2', 'q5'}): 'q2', frozenset({'q1'}): 'q3'}
+New initial state: q1
 New final states: {'q0'}
-New transitions: {('q0', '1'): 'q0', ('q0', '0'): 'q0', ('q1', '1'): 'q0', ('q1', '0'): 'q0', ('q2', '1'): 'q3', ('q2', '0'): 'q1', ('q3', '1'): 'q3', ('q3', '0'): 'q0'}
+New transitions: {('q0', '0'): 'q0', ('q0', '1'): 'q0', ('q1', '0'): 'q3', ('q1', '1'): 'q2', ('q2', '0'): 'q0', ('q2', '1'): 'q2', ('q3', '0'): 'q0', ('q3', '1'): 'q0'}

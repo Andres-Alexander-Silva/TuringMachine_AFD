@@ -1,6 +1,5 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-import sys
 
 class AFD:
     # Constructor for the AFD class
