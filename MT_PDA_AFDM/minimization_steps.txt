@@ -1,0 +1,13 @@
+Initial partition: [frozenset({''}), frozenset()]
+
+Processing set: frozenset()
+Symbol: , Set: set()
+
+Processing set: frozenset({''})
+Symbol: , Set: set()
+
+Final partition: [frozenset({''}), frozenset()]
+
+New states mapping: {frozenset({''}): 'q0', frozenset(): 'q1'}
+New initial state: q0
+New final states: {'q0'}
