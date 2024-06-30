@@ -1,0 +1,17 @@
+A continuación se presenta un ejemplo de cómo se debe ingresar la información de un autómata de pila determinista (PDA) en la aplicación:
+
+Ingrese los estados separados por comas: q0,q1,q2,q3
+Ingrese el alfabeto de entrada separado por comas: 0,1
+Ingrese el alfabeto de la pila separado por comas: Z0,0
+Ingrese el estado inicial: q0
+Ingrese el símbolo inicial de la pila: Z0
+Ingrese los estados de aceptación separados por comas: q3
+Ingrese las transiciones en el formato 'estado,entrada -> estado_siguiente,operación_pila'
+q0,0 -> q1,push
+q1,0 -> q1,push
+q1,1 -> q2,pop
+q2,1 -> q2,pop
+q2,Z0 -> q3,noop
+q3,0 -> q1,push
+fin
+Ingrese la cadena de entrada: 000111
